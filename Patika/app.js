@@ -1,7 +1,7 @@
 /* var name = "Ahmet Keskin"
  console.log(name)
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
- 
+
  let random;              // sadece tanımladık instance atamadık let'in farkı
  console.log(random);
 
@@ -60,7 +60,7 @@ domUl.append(yeniLi)
 /*
 
 
-//===   hem değeri hemde türü eşitse 
+//===   hem değeri hemde türü eşitse
 // !=  eşit değilse
 // !  (değilse)
 
@@ -70,7 +70,7 @@ domUl.append(yeniLi)
 while (true) {
     let Girdi = prompt(" Bir Sayı Giriniz")
 
-if(Girdi >= 10 ) { 
+if(Girdi >= 10 ) {
     alert("Başarılı !")
     break
 }
@@ -86,7 +86,7 @@ else{
  let userName = "Hızlıca if"
 let shortif =  userName.length > 2 ?   userName : "kullanıcı bilginiz bulunamadı"
 console.log(shortif);
- 
+
   let age = 24;
        let permission = (age >= 18) ? "Giriş yapabilirsiniz." : "Giriş yapamazsınız.";
 
@@ -98,7 +98,7 @@ console.log(shortif);
 
 
 while (true) {
-    
+
 let not = prompt("Harf Notunu Öğrenmek İçin Lütfen Notunuzu Giriniz")
 let cikti;
 let info = document.querySelector("#info")
@@ -107,7 +107,7 @@ let info = document.querySelector("#info")
     if (not >=0 && not <=100) {
         if (not >= 90 && not < 101) {
             cikti = "AA"
-        } 
+        }
         else if (not <90 && not >=85){ cikti="BA  :))))))))))))))"}
         else if (not <85 && not >=80){ cikti="BB  :))))))))))))))"}
         else if (not <80 && not >=75){ cikti="CB  :))))))))))))))"}
@@ -119,24 +119,102 @@ let info = document.querySelector("#info")
               cikti="FF  :(((((((((((((("
             info.classList.add("text-denger")
             }
-        
-       
-    
-       
-        
+
+
+
+
+
         info.innerHTML=(`Harf Notunuz : ${cikti}`)
-        
-        
+
+
         break;
-    } 
+    }
     else {
         alert("La adam gibi sayı gir")
-        
+
     }
 
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
 
+
+  //        Function
+
+// function deneme ( param ) {
+//     console.log("müümkünse dışa bağımlılığı azalt fonksiyon içinde parametre aldır global parametreler sonradan sıkıntı çıkartır")
+// }
+
+
+// function returnfonk(firstname,lastname) {
+//     let info = `Merhaba ${firstname} ${lastname}`  // fonksiyon içinde ki info diğer info ları etkilemez yani ezmez ayrı ayrı , 
+//     return info  //return ettirip infonun döndürülüp başka fonksiyonda çalışmasına olanak sağlıyoruz
+// }
+
+// function DomHtml(id,info) {
+//     let dom = document.querySelector(`#${id}`)
+//     dom.innerHTML= info
+// }
+
+
+// // DomHtml("deneme" ,"merhaba fonksiyon calisti")
+
+// DomHtml("deneme", returnfonk("ahmet","keskin"))
+///////////////////////////////////////////////////////////////////////////////////////////////////
 */
 
+                    // Fat arrow  => 
 
+// const arrfunc = (firstname,lastname) => {
+//     let info = console.log(firstname,lastname)
+//     return info
+// }
+
+// arrfunc("Ulaa calisti","soyad")
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+                                      // Dom ile event ekleme 
+// let element = document.querySelector("#deneme")
+// element.addEventListener("click", clicked)  // fonksiyona () direkt çalışır buda işimize yaramaz click için
+
+// function clicked() {
+//     console.log("Tıklandı");
+//     console.log(this.innerHTML="içerik degisti");
+//     this.style.color == "red" ? this.style.color = "black" : this.style.color = "red"
+// }
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// let scoreDOM = document.querySelector("#number")
+// let arttırDOM = document.querySelector("#positive")
+// let azaltDOM  = document.querySelector("#negative")
+
+
+
+// scoreDOM.innerHTML=0
+
+// arttırDOM.addEventListener("click",arttır)
+// azaltDOM.addEventListener("click", azalt)
+
+
+// function arttır() {
+//     scoreDOM.innerHTML ++
+// }
+// function azalt() {
+//     scoreDOM.innerHTML --
+// }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //Formlarda url kısmında tag saklama ve sürekli sayfayı yeniden dönmesini engelliyoruz
+
+    // let formDOM = document.querySelector("#userForm")
+    // formDOM.addEventListener("submit",formSubmit)
+
+
+    // function formSubmit() {
+    //     event.preventDefault()   // default işlemini iptal ettirdik burada
+    //     let scoreInputDOM =document.querySelector("#score")
+    //     console.log(scoreInputDOM.value);
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////
+                 // form bölüm sonu egzersiz
+    
