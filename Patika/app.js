@@ -284,9 +284,52 @@ let info = document.querySelector("#info")
 
                     // Loops
 
+    // for(let i = 0 ; i<10; i++){
+    //     console.log(i);
+    // }
+
+//  let userDOM=document.querySelector("#userList")
+
+// let users = ["lorem","ipsum","dolor"]
+
+// for (let index = 0; index < users.length; index++) {    // döngü ile array deki verileri  tabloya yerleştirme 
+//     const liDOM = document.createElement("li")
+//     liDOM.innerHTML=users[index]
+//     userDOM.appendChild(liDOM)
+// }
+
+
+            // forEach         // for ile yapmaktansa bu daha kolay tabloya yerleşti
+
+// let PRODUCTS = ["Pc","mouse","keyboard","Laptop","chair","Monitor"]
+
+// PRODUCTS.forEach(item => {    // item adlı fonsiyonu PRODUCTS arrayinin içinde dolaştık  ve arrayin bilgilerine eriştik
+//     const liDOM = document.createElement("li")
+//     liDOM.innerHTML = item
+//     userDOM.appendChild(liDOM)
+// });
+
+
+
+//                  /// filter kullanımı
+
+//  let PRODUCTS = ["Pc","mouse","keyboard","Laptop","chair","Monitor","Graphic Card","Mouse pad","CPU"]
+
+//  const newProducts = PRODUCTS.filter(item => (item.length > 4))
+//  console.log(newProducts);
 
 
 
 
+                                    // Array map Kullanımı
 
+//  let users = ["LOREM","IpSUM","DOlor","Medic","HALAR","JOin"]
+
+//  const newUsers = users.map(item => {
+//      return{
+//          username : item , shortname:`${item[0]}.`, newname : `${item[0].toUpperCase()} ${item.slice(1).toLowerCase()}` 
+//              }
+//  })
+
+//  console.log(newUsers);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
