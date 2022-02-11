@@ -217,4 +217,76 @@ let info = document.querySelector("#info")
 
     //////////////////////////////////////////////////////////////////////////////////////////////////
                  // form bölüm sonu egzersiz
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                   //Array's
+
+//    let list = [5,7,6,"Ahmet Keskin","Azer Bulbul",45]
+
+//    let  denemeDOM =  document.querySelector("#deneme")
+
+//       denemeDOM.innerHTML=list
+
+//     //console.log(list[0]);  //array ilk eleman
+
+
+//     // console.log(list[(list.length)-1]);  // array son eleman bulma
+
+//     // list.push("ahey aheyy")  // sona eleman ekledik 
+//     // list.push(28)
+//     // console.log(list); 
+
+//     // list.unshift("Basa geldi")  // Başa eleman ekledik
+
+//     // console.log(list); 
+
+
+//     // list.pop()   // sondaki elemanı sildik 
+//     // console.log(list);
+
+//     // list.shift()
+//     // console.log(list);  // baştaki elemanı sildik
+
+//     // let den = list.splice(1,3)   //splice() ayırma işleminde kullanılır ilk numara başlangıç ikinci gidileceği. öğe de ekleyebiliriz 
+//     // console.log(den);
+
+
+//     // let value=  list.indexOf("Ahmet Keskin")  // value si girilen değerin index numarasını buluyor
+//     // console.log(value);
+
+//      let copy = list.slice()  // kopyasından bağımsız bir kopyaladık 
+
+//     //  console.log(`Ilk liste    : ${list}`);
+//     //  console.log(`Ikınci liste : ${copy}`);
+
+//     //  copy.push("hello heeyy")
+
+//     //  console.log(`Ikınci liste bağımsız : ${copy}`);
+
+     
+//     //  console.log("ES6 Array birleştirme : ", ...copy,...list ); /// ES6 sonrası Array birleştirme
+
+
+//     // list.toString()  // tüm öğelerini string hale çevirdi
     
+
+//     // list.join(" --- ")  // ekliyor 
+//     // console.log(list);
+//     /////////////////////////////////////////////
+
+
+//     list.splice((list.length)-1,0,"Sıfır çıkarma demek buraya yazdığımda ekle demek")
+//     console.log(list);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                    // Loops
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
