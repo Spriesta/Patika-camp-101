@@ -162,7 +162,7 @@ let info = document.querySelector("#info")
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 */
 
-                    // Fat arrow  => 
+// Fat arrow  => 
 
 // const arrfunc = (firstname,lastname) => {
 //     let info = console.log(firstname,lastname)
@@ -172,7 +172,7 @@ let info = document.querySelector("#info")
 // arrfunc("Ulaa calisti","soyad")
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-                                      // Dom ile event ekleme 
+// Dom ile event ekleme 
 // let element = document.querySelector("#deneme")
 // element.addEventListener("click", clicked)  // fonksiyona () direkt çalışır buda işimize yaramaz click için
 
@@ -204,24 +204,24 @@ let info = document.querySelector("#info")
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-    //Formlarda url kısmında tag saklama ve sürekli sayfayı yeniden dönmesini engelliyoruz
+//Formlarda url kısmında tag saklama ve sürekli sayfayı yeniden dönmesini engelliyoruz
 
-    // let formDOM = document.querySelector("#userForm")
-    // formDOM.addEventListener("submit",formSubmit)
-
-
-    // function formSubmit() {
-    //     event.preventDefault()   // default işlemini iptal ettirdik burada
-    //     let scoreInputDOM =document.querySelector("#score")
-    //     console.log(scoreInputDOM.value);
-
-    //////////////////////////////////////////////////////////////////////////////////////////////////
-                 // form bölüm sonu egzersiz
+// let formDOM = document.querySelector("#userForm")
+// formDOM.addEventListener("submit",formSubmit)
 
 
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// function formSubmit() {
+//     event.preventDefault()   // default işlemini iptal ettirdik burada
+//     let scoreInputDOM =document.querySelector("#score")
+//     console.log(scoreInputDOM.value);
 
-                   //Array's
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// form bölüm sonu egzersiz
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Array's
 
 //    let list = [5,7,6,"Ahmet Keskin","Azer Bulbul",45]
 
@@ -265,12 +265,12 @@ let info = document.querySelector("#info")
 
 //     //  console.log(`Ikınci liste bağımsız : ${copy}`);
 
-     
+
 //     //  console.log("ES6 Array birleştirme : ", ...copy,...list ); /// ES6 sonrası Array birleştirme
 
 
 //     // list.toString()  // tüm öğelerini string hale çevirdi
-    
+
 
 //     // list.join(" --- ")  // ekliyor 
 //     // console.log(list);
@@ -282,11 +282,11 @@ let info = document.querySelector("#info")
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-                    // Loops
+// Loops
 
-    // for(let i = 0 ; i<10; i++){
-    //     console.log(i);
-    // }
+// for(let i = 0 ; i<10; i++){
+//     console.log(i);
+// }
 
 //  let userDOM=document.querySelector("#userList")
 
@@ -299,7 +299,7 @@ let info = document.querySelector("#info")
 // }
 
 
-            // forEach         // for ile yapmaktansa bu daha kolay tabloya yerleşti
+// forEach         // for ile yapmaktansa bu daha kolay tabloya yerleşti
 
 // let PRODUCTS = ["Pc","mouse","keyboard","Laptop","chair","Monitor"]
 
@@ -321,7 +321,7 @@ let info = document.querySelector("#info")
 
 
 
-                                    // Array map Kullanımı
+// Array map Kullanımı
 
 //  let users = ["LOREM","IpSUM","DOlor","Medic","HALAR","JOin"]
 
@@ -333,3 +333,79 @@ let info = document.querySelector("#info")
 
 //  console.log(newUsers);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////Object
+
+//  let item2 = {}           //obje olduğunu tanımladık
+//  let item3 = new Object() //obje olduğunu tanımladık
+
+
+// let urun = {
+//     urunIsmi  : "Razer Mouse",
+//     urunRengi : "Siyah",
+//     urunFiyati: 1000 ,
+// }
+// console.log(urun.urunFiyati);
+
+
+// urun.urunIsmi= "SteelSeries"  // property değerini değiştirdik
+// console.log(urun.urunIsmi);
+
+
+// urun.urunGaranti = 2            // objeye'a yeni property ekledik
+// console.log(urun);
+
+
+
+// Anahtar bilgisine ulasma
+
+// let key = Object.keys(urun)
+// console.log(key);
+
+
+// key.forEach(item => {
+//     console.log(item);
+//     console.log(urun[item]);
+// });
+
+// value bilgisine ulasma
+
+// let valueee = Object.values(urun)
+// console.log(valueee);
+
+
+
+////////// Nesnelere metot ekleme
+
+
+// let user = {
+//     firstName: "Ahmet",
+//     lastName: "Keskin",
+//     Yas: 23,
+//     alive: true,
+
+//     shortName: function () {
+//         return `${this.firstName[0].toUpperCase()}. ${this.lastName}`
+//     }
+// }
+
+// console.log(user.shortName());
+
+
+
+
+
+//Object ve Array Destructuring Kullanımı
+// Destructuring bir obje veya bir array içinden her bir elemanın alınıp bir değişken içine kaydedilmesi.
+
+let Id = {
+    isim: "Ahmet",
+    soyad: "keskin",
+    Yas: 23
+}
+
+let { isim:adı,soyad:lastName} = Id
+console.log(adı,lastName);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
